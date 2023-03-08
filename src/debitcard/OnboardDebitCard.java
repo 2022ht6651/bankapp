@@ -8,10 +8,11 @@ public class OnboardDebitCard {
         System.out.println("Welcome " + name +" to debit card division processing!");
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void provisionCard(String[] args) throws Exception {
         signupCreditCard("Reddy M");
         collectApplicantDetails(45);
         creditcard.CreditCheck.doCreditCheck("Vijay M");
+        creditcard.CreditCheck.findCreditScore(30);
     }
 }
 
